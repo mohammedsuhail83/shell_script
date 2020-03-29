@@ -1,0 +1,11 @@
+################################
+###     ${filename%.txt}     ###
+###  % indicates a wildcard  ###
+################################
+
+#!/bin/bash
+
+for filename in *.txt
+do
+	mv $filename ${filename%.txt}.none
+done
